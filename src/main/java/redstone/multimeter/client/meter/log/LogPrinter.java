@@ -246,7 +246,7 @@ public class LogPrinter {
 
 		@Override
 		public String toString() {
-			return String.format("%d - (%s) %s", log.getSubtick(), meter.getName(), log.getEvent().toString());
+			return String.format("%d - (%s) %s (%s)", log.getSubtick(), meter.getName(), log.getEvent().toString(), meter.getPos().toString());
 		}
 
 		@Override
